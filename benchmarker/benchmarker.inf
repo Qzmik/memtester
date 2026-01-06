@@ -1,0 +1,32 @@
+[Defines]
+  INF_VERSION = 1.25
+  BASE_NAME = benchmarker
+  FILE_GUID = 74fc79d3-9678-49a1-b603-f7226359d00e
+  MODULE_TYPE = UEFI_APPLICATION
+  VERSION_STRING = 1.0
+  ENTRY_POINT = UefiMain
+
+[Sources]
+  benchmarker.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+
+[Guids]
+
+[Ppis]
+
+[Protocols]
+gEfiLoadedImageProtocolGuid
+gEfiSmbiosProtocolGuid
+
+[FeaturePcd]
+
+[Pcd]
+
+
